@@ -9,7 +9,7 @@ import os
 
 def search():
     global user_input,screen,img
-    link = "https://www.iconfinder.com/search?q="+user_input.get()
+    link = "https://www.flaticon.com/free-icons/"+user_input.get()
     info = requests.get(link)
     contents = info.content
     soup = BeautifulSoup(contents,'html5lib')
